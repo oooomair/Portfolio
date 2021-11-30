@@ -1,0 +1,96 @@
+// home
+
+.home {
+  background: linear-gradient(55deg, #4831d4 72%, #ccf381 28%);
+  height: 95vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+}
+
+.home__parallax {
+  width: 99%;
+  height: 100%;
+  position: absolute;
+  bottom: 80px;
+  top: 4vh;
+  pointer-events: none;
+}
+
+.home__intro {
+  margin: 0 0 0 250px;
+  color: aliceblue;
+  width: 800px;
+
+  .home__hello {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px 0;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h6 {
+      margin-left: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ccf381;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0;
+      background: #cbf381a4;
+      right: 0;
+      transition: ease 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+      background: #cbf38144;
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.home__image {
+  margin: 40px 0 0 250px;
+  border-radius: 20px;
+  border-right: 1px dashed rgba(0, 0, 0, 0.507);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.507);
+}
+
+.home__me {
+  display: flex;
+  position: relative;
+  height: 350px;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: translate(-20px, -20px);
+  transition: all 1.5s ease;
+
+  &:hover {
+    transform: translate(0px, 0px);
+  }
+}

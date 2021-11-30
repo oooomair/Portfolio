@@ -4,14 +4,17 @@
   .home__intro {
     margin-left: 450px;
   }
+  .home__image {
+    margin: 40px 0 0 400px;
+  }
   .skills__git-logo {
     grid-column: 2;
   }
 }
 
-@media (min-width: 1668px) and (min-width: 2000px) {
+@media (min-width: 1668px) and (max-width: 2000px) {
   .home__image {
-    margin: 40px 0 0 450px;
+    margin: 40px 0 0 250px;
   }
 }
 @media (max-width: 2000px) {
@@ -42,15 +45,50 @@
   .skills__git-logo {
     grid-column: 2;
   }
+  .projects__project-cont-1,
+  .projects__project-cont-2 {
+    max-width: 1200px;
+  }
+  .projects__project-1,
+  .projects__project-2 {
+    min-width: 1300px;
+  }
+  .projects__img-1,
+  .projects__img-2,
+  .project__img-res {
+    height: 600px;
+  }
+  .projects__project-desc-1 {
+    max-height: 600px;
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1400px) {
+  .navbar__list {
+    .navbar__link {
+      color: #ccf381;
+      &::after {
+        background-color: #ccf381;
+      }
+    }
+    .navbar__link--active {
+      color: #ccf381;
+      border: 1px solid #ccf381;
+      &:hover {
+        color: #4831d4;
+      }
+      &::after {
+        background: #ccf381;
+      }
+    }
+  }
   .home__parallax {
     display: none;
   }
   .home {
     flex-flow: column;
     height: max-content;
+    background: #4831d4;
   }
   .home__intro {
     margin: 200px auto 0 auto;
@@ -58,14 +96,82 @@
   .home__image {
     margin: 100px auto;
   }
+  .skills__technologies {
+    .skills__skill {
+      img {
+        height: 120px;
+      }
+      .skills__jq-logo {
+        height: 80px;
+      }
+    }
+  }
+  .skills__other-technologies {
+    .skills__skill {
+      img {
+        height: 120px;
+      }
+      .skills__express-logo {
+        height: 200px;
+      }
+      .skills__mongodb-logo {
+        height: 180px;
+      }
+    }
+  }
   .skills__git-logo {
     grid-column: 2;
+  }
+  .projects__project-cont-1,
+  .projects__project-cont-2 {
+    max-width: 1150px;
+  }
+  .projects__project-1,
+  .projects__project-2 {
+    min-width: 1200px;
+  }
+  .projects__img-1,
+  .projects__img-2,
+  .project__img-res {
+    height: 550px;
+  }
+  .projects__project-desc-1 {
+    max-height: 550px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1250px) {
+  .projects__project-cont-1,
+  .projects__project-cont-2 {
+    max-width: 1020px;
+  }
+  .projects__project-1,
+  .projects__project-2 {
+    min-width: 1050px;
+  }
+  .projects__img-1,
+  .projects__img-2,
+  .project__img-res {
+    height: 500px;
+  }
+  .projects__project-desc-1,
+  .projects__project-desc-2 {
+    max-height: 500px;
   }
 }
 
 @media (max-width: 1000px) {
   body {
     width: max-content;
+  }
+  .home {
+    height: 150vh;
+  }
+  .home__intro {
+    margin: 0 0 0 70px;
+  }
+  .home__image {
+    margin: 0 0 0 100px;
   }
   .home__parallax {
     display: none;

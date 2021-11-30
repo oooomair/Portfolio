@@ -43,11 +43,11 @@
       <div class="home">
         <img
           class="home__parallax"
-          data-speed="5"
+          data-speed="3 "
           src="./assets/parallaax.png"
           alt=""
         />
-        <div class="home__intro">
+        <div data-speed="1" class="home__intro parallax">
           <div class="home__hello">
             <h3>HELLO</h3>
             <h6>I'M</h6>
@@ -59,14 +59,14 @@
             frontend products with great user experience</span
           >
         </div>
-        <div class="home__image">
+        <div data-speed="1" class="home__image parallax">
           <img class="home__me" src="./assets/me.jpeg" alt="" />
         </div>
       </div>
     </section>
     <section id="skills">
       <div class="skills">
-        <h1>My Technology stack:</h1>
+        <h1>My Technology stack</h1>
         <div class="skills__technologies">
           <div class="skills__skill">
             <img src="./assets/html-logo.png" alt="html logo" />
@@ -102,7 +102,7 @@
             <span class="skills__text">GIT</span>
           </div>
         </div>
-        <h2>Other technologies I can work with:</h2>
+        <h2>Other technologies I can work with</h2>
         <div class="skills__other-technologies">
           <div class="skills__skill">
             <img
@@ -127,9 +127,110 @@
         </div>
       </div>
     </section>
-    <!-- <section id="projects">
-      <div class="projects"></div>
-    </section> -->
+    <div class="skill-project"></div>
+    <section id="projects">
+      <div class="projects">
+        <h1>My Work</h1>
+        <div class="projects__project-1">
+          <h2>OMAIRAZON</h2>
+          <div class="projects__project-cont-1">
+            <div class="projects__project-img">
+              <img
+                id="project-img-res-1"
+                class="project__img-res"
+                src="./assets/project-1-resp.PNG"
+                alt="project"
+              />
+              <img
+                id="project-1-img"
+                class="projects__img-1"
+                src="./assets/project-1.PNG"
+                alt="omairazon"
+              />
+              <h6 class="projects__img--after">CLICK TO SHOW MORE</h6>
+            </div>
+
+            <div id="project-1-desc" class="projects__project-desc-1">
+              <h3>Ecommerce website</h3>
+              <h4>FULLY RESPONSIVE</h4>
+              <p>
+                An online shopping website built using React with different
+                pages for shopping cart etc using react router dom, pulled in
+                products from an api endpoint
+              </p>
+              <div class="projects__links">
+                <a href="">
+                  <img
+                    class="projects__logo"
+                    src="./assets/website-1.png"
+                    alt="project-logo"
+                  />
+                  <span>Website</span>
+                </a>
+                <a href="">
+                  <img
+                    class="projects__logo"
+                    src="./assets/github-logo.png"
+                    alt="gh-logo"
+                  />
+                  <span>Github</span>
+                </a>
+              </div>
+              <span id="show-less-1" class="show-less">SHOW LESS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project-2">
+          <h2>OMAIRAZON</h2>
+          <div class="projects__project-cont-2">
+            <div class="projects__project-img">
+              <img
+                id="project-img-res-2"
+                class="project__img-res"
+                src="./assets/project-1-resp.PNG"
+                alt="project"
+              />
+              <img
+                id="project-2-img"
+                class="projects__img-2"
+                src="./assets/project-1.PNG"
+                alt="omairazon"
+              />
+              <h6 class="projects__img--after">CLICK TO SHOW MORE</h6>
+            </div>
+            <div id="project-2-desc" class="projects__project-desc-2">
+              <h3>Ecommerce website</h3>
+              <h4>FULLY RESPONSIVE</h4>
+              <p>
+                An online shopping website built using React with different
+                pages for shopping cart etc using react router dom, pulled in
+                products from an api endpoint
+              </p>
+              <div class="projects__links">
+                <a href="">
+                  <img
+                    class="projects__logo"
+                    src="./assets/website-1.png"
+                    alt="project-logo"
+                  />
+                  <span>Website</span>
+                </a>
+                <a href="">
+                  <img
+                    class="projects__logo"
+                    src="./assets/github-logo.png"
+                    alt="gh-logo"
+                  />
+                  <span>Github</span>
+                </a>
+              </div>
+              <span id="show-less-2" class="show-less">SHOW LESS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

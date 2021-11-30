@@ -1,0 +1,107 @@
+// technologies
+
+.skills {
+  background: #fef5ed;
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    color: rgb(0, 13, 107);
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    color: rgb(0, 13, 107);
+    margin: 40px 0 0 0;
+  }
+}
+
+.skills__technologies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+
+  .skills__skill {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    img {
+      height: 170px;
+      transform: scale(1);
+      opacity: 1;
+      transition: all ease 0.5s;
+
+      &:hover {
+        transform: scale(0.85);
+        opacity: 0.9;
+      }
+    }
+    .skills__jq-logo {
+      height: 100px;
+    }
+    .skills__text {
+      margin: 10px 0 0 0;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      color: rgba(0, 12, 107, 0.795);
+      opacity: 0;
+      transition: all ease 0.5s;
+    }
+  }
+}
+
+.skills__other-technologies {
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+
+  .skills__skill {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    img {
+      height: 170px;
+      transform: scale(1);
+      opacity: 1;
+      transition: all ease 0.5s;
+
+      &:hover {
+        transform: scale(0.85);
+        opacity: 0.9;
+      }
+    }
+
+    .skills__express-logo {
+      height: 300px;
+    }
+
+    .skills__mongodb-logo {
+      height: 220px;
+    }
+    .skills__text {
+      margin: 10px 0 0 0;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      color: rgba(0, 12, 107, 0.795);
+      opacity: 0;
+      transition: all ease 0.5s;
+    }
+  }
+}
+
+// this is not nested as it doesnt seem to work inside
+
+.skills__skill:hover .skills__text {
+  opacity: 1;
+}
+
+// .
