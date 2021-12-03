@@ -1,7 +1,7 @@
 // home
 
 .home {
-  background: linear-gradient(55deg, #4831d4 72%, #ccf381 28%);
+  background: linear-gradient(55deg, #05386b 72%, #5cdb95 28%);
   height: 95vh;
   display: flex;
   flex-flow: row wrap;
@@ -16,12 +16,14 @@
   bottom: 80px;
   top: 4vh;
   pointer-events: none;
+  transition: all ease 0.1s;
 }
 
 .home__intro {
   margin: 0 0 0 250px;
-  color: aliceblue;
+  color: #edf5e1;
   width: 800px;
+  transition: all ease 0.1s;
 
   .home__hello {
     display: flex;
@@ -42,7 +44,7 @@
   h1 {
     font-size: 4rem;
     margin-bottom: 10px;
-    color: #ccf381;
+    color: #5cdb95;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -52,7 +54,7 @@
       position: absolute;
       height: 100%;
       width: 0;
-      background: #cbf381a4;
+      background: #cff881a4;
       right: 0;
       transition: ease 0.3s;
     }
@@ -77,8 +79,8 @@
 .home__image {
   margin: 40px 0 0 250px;
   border-radius: 20px;
-  border-right: 1px dashed rgba(0, 0, 0, 0.507);
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.507);
+  transition: all ease 0.1s;
+  border: 1px dashed rgba(26, 26, 26, 0.534);
 }
 
 .home__me {

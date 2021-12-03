@@ -1,7 +1,7 @@
 // technologies
 
 .skills {
-  background: #fef5ed;
+  background: #edf5e1;
   padding: 50px 0 0 0;
   display: flex;
   flex-flow: column wrap;
@@ -10,12 +10,12 @@
   h1 {
     font-size: 3.5rem;
     margin-bottom: 50px;
-    color: rgb(0, 13, 107);
+    color: #05386b;
   }
 
   h2 {
     font-size: 3.5rem;
-    color: rgb(0, 13, 107);
+    color: #05386b;
     margin: 40px 0 0 0;
   }
 }
@@ -32,7 +32,7 @@
     align-items: center;
     flex-flow: column wrap;
     img {
-      height: 170px;
+      height: 120px;
       transform: scale(1);
       opacity: 1;
       transition: all ease 0.5s;
@@ -43,7 +43,7 @@
       }
     }
     .skills__jq-logo {
-      height: 100px;
+      height: 70px;
     }
     .skills__text {
       margin: 10px 0 0 0;
@@ -69,7 +69,7 @@
     flex-flow: column wrap;
     align-items: center;
     img {
-      height: 170px;
+      height: 120px;
       transform: scale(1);
       opacity: 1;
       transition: all ease 0.5s;
@@ -81,11 +81,11 @@
     }
 
     .skills__express-logo {
-      height: 300px;
+      height: 230px;
     }
 
     .skills__mongodb-logo {
-      height: 220px;
+      height: 180px;
     }
     .skills__text {
       margin: 10px 0 0 0;

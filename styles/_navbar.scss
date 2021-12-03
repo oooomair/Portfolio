@@ -17,7 +17,7 @@
 .navbar__logo {
   font-size: 2.5rem;
   margin-left: 70px;
-  color: #ccf381;
+  color: #5cdb95;
   transition: all 0.5s ease;
 
   &:hover {
@@ -27,7 +27,7 @@
 }
 
 .navbar__logo--blue {
-  color: #4831d4;
+  color: #05386b;
 }
 
 .navbar__list {
@@ -41,7 +41,7 @@
   position: relative;
   font-size: 1.3rem;
   margin: 0 20px;
-  color: #4831d4;
+  color: #05386b;
 
   &::after {
     content: "";
@@ -50,7 +50,7 @@
     right: 0;
     width: 100%;
     height: 2px;
-    background-color: #4831d4;
+    background-color: #05386b;
     opacity: 1;
     transform-origin: center;
     transform: scale(0);
@@ -66,14 +66,14 @@
   position: relative;
   font-size: 1.3rem;
   margin: 0 20px;
-  color: #4831d4;
+  color: #05386b;
   text-transform: capitalize;
-  border: 1px solid #4831d4;
+  border: 1px solid #05386b;
   border-radius: 5px;
   padding: 10px 20px;
 
   &:hover {
-    color: #ccf381;
+    color: #5cdb95;
   }
 
   &::after {
@@ -81,7 +81,7 @@
     position: absolute;
     height: 100%;
     width: 0;
-    background: #4831d4;
+    background: #05386b;
     top: 0;
     right: 0;
     transition: ease 0.3s;
@@ -91,7 +91,7 @@
   &:hover::after {
     width: 100%;
     left: 0;
-    background: #4831d4;
+    background: #05386b;
   }
 }
 
@@ -109,7 +109,7 @@
     position: absolute;
     height: 8px;
     width: 100%;
-    background: #ccf381;
+    background: #5cdb95;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -132,7 +132,7 @@
   display: none;
 
   span:nth-child(1) {
-    background-color: #4831d4;
+    background-color: #05386b;
     top: 40px;
     transform: rotate(135deg);
   }
@@ -141,7 +141,7 @@
     left: -60px;
   }
   span:nth-child(3) {
-    background-color: #4831d4;
+    background-color: #05386b;
     top: 40px;
     transform: rotate(-135deg);
   }
@@ -169,7 +169,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  background: #cbf381f8;
+  background: #5cdb95;
   display: none;
 }
 
@@ -179,8 +179,8 @@
   margin: 50px auto;
   padding: 20px;
   width: 80%;
-  color: #362797;
-  border: 2px solid #4831d4;
+  color: #05386b;
+  border: 2px solid #05386b;
   border-radius: 15px;
 }
 

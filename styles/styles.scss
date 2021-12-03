@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   font-family: "Manrope", sans-serif;
@@ -25,8 +29,10 @@ a {
 
 @import "./home";
 
-@import "./skills";
-
 @import "./projects";
+
+@import "./about";
+
+@import "./skills";
 
 @import "./media";

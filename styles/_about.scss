@@ -1,0 +1,31 @@
+.skill-project {
+  height: 20vh;
+  background: linear-gradient(4deg, #05386b 50%, #edf5e1 50.3%);
+  display: flex;
+
+  h1 {
+    color: #5cdb95;
+    font-size: 5rem;
+    align-self: flex-start;
+    margin-left: 200px;
+    align-self: flex-end;
+  }
+}
+
+// about
+
+.about {
+  height: 80vh;
+  background: #05386b;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 200px;
+
+  p {
+    color: #5cdb95;
+    font-size: 2rem;
+    width: 50%;
+    align-self: flex-start;
+  }
+}
