@@ -1,31 +1,109 @@
-.skill-project {
-  height: 20vh;
-  background: linear-gradient(4deg, #05386b 50%, #edf5e1 50.3%);
-  display: flex;
-
-  h1 {
-    color: #5cdb95;
-    font-size: 5rem;
-    align-self: flex-start;
-    margin-left: 200px;
-    align-self: flex-end;
-  }
-}
-
 // about
 
 .about {
-  height: 80vh;
-  background: #05386b;
+  background: linear-gradient(7deg, #05386b 75%, #edf5e1 25%);
   display: flex;
   flex-flow: column;
-  align-items: center;
-  padding: 0 200px;
+  padding: 0 200px 70px 200px;
+}
+
+.about__stuff {
+  display: flex;
+}
+
+.about__intro {
+  margin: 150px 50px 0 0;
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+
+  h1 {
+    color: #5cdb95;
+    font-size: 7rem;
+  }
 
   p {
     color: #5cdb95;
     font-size: 2rem;
-    width: 50%;
-    align-self: flex-start;
+  }
+}
+
+.about__img {
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  a {
+    color: #05386b;
+    padding: 15px 80px;
+    margin-top: 50px;
+    border: 1px solid #5cdb95;
+    border-radius: 10px;
+    background: linear-gradient(to left, #5cdb95 50%, #05386b 50%);
+    background-size: 200% 100%;
+    background-position: right top;
+    transition: ease all 0.3s;
+
+    &:hover {
+      background-position: left top;
+      color: #5cdb95;
+    }
+  }
+}
+
+.about__pixme {
+  height: 420px;
+  border-radius: 50%;
+}
+
+.about__skills {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.about__developer {
+  border-radius: 10px;
+  margin: 0 0 0 60px;
+  height: 40vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(142, 228, 175, 0.973);
+  width: 30%;
+
+  img {
+    width: 85%;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    color: #edf5e1;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+
+.about__designer {
+  margin: 0 60px 0 0;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(142, 228, 175, 0.973);
+  width: 30%;
+
+  img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    color: #edf5e1;
+    font-size: 2rem;
+    font-weight: bolder;
   }
 }

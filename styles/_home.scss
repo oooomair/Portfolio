@@ -1,7 +1,7 @@
 // home
 
 .home {
-  background: linear-gradient(55deg, #05386b 72%, #5cdb95 28%);
+  background: linear-gradient(55deg, #05386b 72%, #5cdb95 28.3%);
   height: 95vh;
   display: flex;
   flex-flow: row wrap;
@@ -86,7 +86,7 @@
 .home__me {
   display: flex;
   position: relative;
-  height: 350px;
+  height: 450px;
   border-radius: 20px;
   cursor: pointer;
   transform: translate(-20px, -20px);
