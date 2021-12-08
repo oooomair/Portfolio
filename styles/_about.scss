@@ -1,21 +1,18 @@
 // about
 
 .about {
-  background: linear-gradient(7deg, #05386b 75%, #edf5e1 25%);
+  background: #05386b;
   display: flex;
-  flex-flow: column;
-  padding: 0 200px 70px 200px;
-}
-
-.about__stuff {
-  display: flex;
+  padding: 0 200px;
+  position: relative;
 }
 
 .about__intro {
-  margin: 150px 50px 0 0;
   display: flex;
   flex-flow: column;
-  align-content: flex-start;
+  align-items: center;
+  padding: 0 200px;
+  text-align: center;
 
   h1 {
     color: #5cdb95;
@@ -23,87 +20,87 @@
   }
 
   p {
-    color: #5cdb95;
-    font-size: 2rem;
+    color: #edf5e1;
+    font-size: 1.9rem;
   }
-}
 
-.about__img {
-  margin: 60px 0 0 0;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  span {
+    color: #5cdb95;
+  }
 
-  a {
-    color: #05386b;
-    padding: 15px 80px;
-    margin-top: 50px;
-    border: 1px solid #5cdb95;
-    border-radius: 10px;
-    background: linear-gradient(to left, #5cdb95 50%, #05386b 50%);
-    background-size: 200% 100%;
-    background-position: right top;
-    transition: ease all 0.3s;
-
-    &:hover {
-      background-position: left top;
+  .about__contacts {
+    display: flex;
+    a {
       color: #5cdb95;
+      padding: 15px 70px;
+      margin: 35px 20px 0 20px;
+      border: 2px solid #5cdb95;
+      border-radius: 10px;
+      background: linear-gradient(to left, #05386b 50%, #5cdb95 50%);
+      background-size: 200% 100%;
+      background-position: right top;
+      transition: ease all 0.5s;
+      &:hover {
+        background-position: left top;
+        color: #05386b;
+      }
     }
   }
 }
 
-.about__pixme {
-  height: 420px;
-  border-radius: 50%;
-}
-
 .about__skills {
+  border-radius: 5px;
+  align-self: center;
+  width: 1000px;
   margin-top: 50px;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  margin-right: 100px;
 }
 
 .about__developer {
-  border-radius: 10px;
-  margin: 0 0 0 60px;
-  height: 40vh;
   display: flex;
-  flex-flow: column;
   align-items: center;
   justify-content: center;
-  background: rgba(142, 228, 175, 0.973);
-  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  padding-right: 20px;
 
   img {
-    width: 85%;
-    margin-bottom: 40px;
-  }
-
-  h1 {
-    color: #edf5e1;
-    font-size: 2rem;
-    font-weight: bolder;
+    height: 250px;
+    width: 380px;
   }
 }
 
 .about__designer {
-  margin: 0 60px 0 0;
-  border-radius: 10px;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
   align-items: center;
-  background: rgba(142, 228, 175, 0.973);
-  width: 30%;
+  justify-content: center;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  img {
+    height: 250px;
+  }
+}
+
+.about-skills {
+  background: #edf5e1;
+  width: 100%;
 
   img {
     width: 100%;
-    margin-bottom: 40px;
+    display: block;
   }
+}
 
-  h1 {
-    color: #edf5e1;
-    font-size: 2rem;
-    font-weight: bolder;
+.about-project {
+  background: #edf5e1;
+  width: 100%;
+
+  img {
+    width: 100%;
+    display: block;
   }
 }

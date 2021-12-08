@@ -2,7 +2,7 @@
 
 .skills {
   background: #edf5e1;
-  padding: 50px 0 0 0;
+  padding: 60px 0 70px 0;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -14,7 +14,7 @@
   }
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #05386b;
     margin: 40px 0 0 0;
   }
@@ -22,8 +22,10 @@
 
 .skills__technologies {
   margin: 0 auto 0 auto;
+  width: 60%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
 
@@ -57,7 +59,7 @@
 }
 
 .skills__other-technologies {
-  margin: 30px auto 0 auto;
+  margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -80,7 +82,7 @@
     }
 
     .skills__express-logo {
-      height: 230px;
+      height: 55px;
     }
 
     .skills__mongodb-logo {

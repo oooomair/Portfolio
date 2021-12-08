@@ -274,7 +274,7 @@ a {
 }
 
 .home {
-  background: linear-gradient(55deg, #05386b 72%, #5cdb95 28.3%);
+  background: linear-gradient(55deg, #05386b 70%, #5cdb95 30.3%);
   height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,12 +402,25 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0 0 0;
+  padding: 50px 0 60px 0;
+  position: relative;
 }
 
 .projects h1 {
   font-size: 5rem;
   color: #05386b;
+}
+
+.projects__back-l {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.projects__back-r {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .projects__project-1 {
@@ -888,25 +901,15 @@ a {
 }
 
 .about {
-  background: linear-gradient(7deg, #05386b 75%, #edf5e1 25%);
+  background: #05386b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  padding: 0 200px 70px 200px;
-}
-
-.about__stuff {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0 200px;
+  position: relative;
 }
 
 .about__intro {
-  margin: 150px 50px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,8 +917,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 200px;
+  text-align: center;
 }
 
 .about__intro h1 {
@@ -924,124 +930,117 @@ a {
 }
 
 .about__intro p {
-  color: #5cdb95;
-  font-size: 2rem;
+  color: #edf5e1;
+  font-size: 1.9rem;
 }
 
-.about__img {
-  margin: 60px 0 0 0;
+.about__intro span {
+  color: #5cdb95;
+}
+
+.about__intro .about__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.about__img a {
-  color: #05386b;
-  padding: 15px 80px;
-  margin-top: 50px;
-  border: 1px solid #5cdb95;
+.about__intro .about__contacts a {
+  color: #5cdb95;
+  padding: 15px 70px;
+  margin: 35px 20px 0 20px;
+  border: 2px solid #5cdb95;
   border-radius: 10px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #5cdb95), color-stop(50%, #05386b));
-  background: linear-gradient(to left, #5cdb95 50%, #05386b 50%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #05386b), color-stop(50%, #5cdb95));
+  background: linear-gradient(to left, #05386b 50%, #5cdb95 50%);
   background-size: 200% 100%;
   background-position: right top;
-  -webkit-transition: ease all 0.3s;
-  transition: ease all 0.3s;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
 
-.about__img a:hover {
+.about__intro .about__contacts a:hover {
   background-position: left top;
-  color: #5cdb95;
-}
-
-.about__pixme {
-  height: 420px;
-  border-radius: 50%;
+  color: #05386b;
 }
 
 .about__skills {
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 1000px;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-right: 100px;
 }
 
 .about__developer {
-  border-radius: 10px;
-  margin: 0 0 0 60px;
-  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(142, 228, 175, 0.973);
-  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  padding-right: 20px;
 }
 
 .about__developer img {
-  width: 85%;
-  margin-bottom: 40px;
-}
-
-.about__developer h1 {
-  color: #edf5e1;
-  font-size: 2rem;
-  font-weight: bolder;
+  height: 250px;
+  width: 380px;
 }
 
 .about__designer {
-  margin: 0 60px 0 0;
-  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(142, 228, 175, 0.973);
-  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .about__designer img {
-  width: 100%;
-  margin-bottom: 40px;
+  height: 250px;
 }
 
-.about__designer h1 {
-  color: #edf5e1;
-  font-size: 2rem;
-  font-weight: bolder;
+.about-skills {
+  background: #edf5e1;
+  width: 100%;
+}
+
+.about-skills img {
+  width: 100%;
+  display: block;
+}
+
+.about-project {
+  background: #edf5e1;
+  width: 100%;
+}
+
+.about-project img {
+  width: 100%;
+  display: block;
 }
 
 .skills {
   background: #edf5e1;
-  padding: 50px 0 0 0;
+  padding: 60px 0 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,17 +1060,19 @@ a {
 }
 
 .skills h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #05386b;
   margin: 40px 0 0 0;
 }
 
 .skills__technologies {
   margin: 0 auto 0 auto;
+  width: 60%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1121,7 +1122,7 @@ a {
 }
 
 .skills__other-technologies {
-  margin: 30px auto 0 auto;
+  margin: 0 auto 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -1161,7 +1162,7 @@ a {
 }
 
 .skills__other-technologies .skills__skill .skills__express-logo {
-  height: 230px;
+  height: 55px;
 }
 
 .skills__other-technologies .skills__skill .skills__mongodb-logo {
@@ -1183,7 +1184,95 @@ a {
 }
 
 .footer {
-  height: 50vh;
-  background: blueviolet;
+  height: 70vh;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(78%, #05386b), color-stop(22%, #edf5e1));
+  background: linear-gradient(0deg, #05386b 78%, #edf5e1 22%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 350px;
+}
+
+.footer__pixme {
+  border-radius: 50%;
+  height: 250px;
+}
+
+.footer__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footer__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__mail h1 {
+  color: #5cdb95;
+  font-size: 4rem;
+}
+
+.footer__mail span {
+  margin-top: 60px;
+  font-size: 23px;
+  font-weight: bolder;
+  padding: 10px 75px;
+  border: 2px solid #5cdb95;
+  border-radius: 5px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  text-align: center;
+  cursor: pointer;
+  color: #5cdb95;
+}
+
+.footer__mail span:hover {
+  background: #5cdb95;
+  color: #05386b;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 50px 200px 0 0;
+}
+
+.footer__links a {
+  color: #5cdb95;
+  font-size: 1.5rem;
+}
+
+.footer__1 {
+  width: 100%;
+}
+
+.footer__2 {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
