@@ -22,10 +22,9 @@
 
 .skills__technologies {
   margin: 0 auto 0 auto;
-  width: 60%;
   display: grid;
-  row-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
   justify-items: center;
   align-items: center;
 
@@ -106,3 +105,18 @@
 }
 
 // .
+
+@media screen and (max-width: 1200px) {
+  .skills__technologies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__other-technologies {
+    grid-template-columns: repeat(2, 1fr);
+    .skills__skill {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+}

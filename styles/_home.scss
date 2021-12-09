@@ -6,11 +6,12 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 
 .home__parallax {
-  width: 99%;
+  width: 97%;
   height: 100%;
   position: absolute;
   bottom: 80px;
@@ -20,7 +21,6 @@
 }
 
 .home__intro {
-  margin: 0 0 0 250px;
   color: #edf5e1;
   width: 800px;
   transition: all ease 0.1s;
@@ -94,5 +94,55 @@
 
   &:hover {
     transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .home {
+    height: 80vh;
+  }
+  .home__intro {
+    width: 600px;
+    .home__hello {
+      h3 {
+        font-size: 1.8rem;
+      }
+      h6 {
+        font-size: 1.8rem;
+      }
+    }
+    h1 {
+      font-size: 3.6rem;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    span {
+      font-size: 1.3rem;
+    }
+  }
+
+  .home__parallax {
+    display: none;
+  }
+  .home__image {
+    margin: 40px 0 0 150px;
+  }
+  .home__me {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    flex-flow: column;
+    background: #05386b;
+    min-height: 95vh;
+  }
+  .home__intro {
+    margin: 80px 0 0 0;
+  }
+  .home__image {
+    margin: 70px 0 0 0;
   }
 }

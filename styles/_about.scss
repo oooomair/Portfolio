@@ -12,11 +12,11 @@
   flex-flow: column;
   align-items: center;
   padding: 0 200px;
-  text-align: center;
 
   h1 {
     color: #5cdb95;
     font-size: 7rem;
+    align-self: flex-start;
   }
 
   p {

@@ -1,8 +1,7 @@
 // footer
 
 .footer {
-  height: 70vh;
-  background: linear-gradient(0deg, #05386b 78%, #edf5e1 22%);
+  background: linear-gradient(0deg, #05386b 75%, #edf5e1 25%);
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -11,13 +10,15 @@
 
 .footer__pixme {
   border-radius: 50%;
-  height: 250px;
+  height: 200px;
 }
 
 .footer__foot {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   width: 100%;
+  padding: 0 0 50px 0;
 }
 
 .footer__mail {
@@ -28,41 +29,79 @@
     color: #5cdb95;
     font-size: 4rem;
   }
-
-  span {
-    margin-top: 60px;
-    font-size: 23px;
-    font-weight: bolder;
-    padding: 10px 75px;
-    border: 2px solid #5cdb95;
-    border-radius: 5px;
-    transition: all ease 0.5s;
-    text-align: center;
-    cursor: pointer;
-    color: #5cdb95;
-
-    &:hover {
-      background: #5cdb95;
-      color: #05386b;
-    }
-  }
 }
 
 .footer__links {
   display: flex;
-  flex-flow: column;
-  margin: 50px 200px 0 0;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 0;
 
-  a {
-    color: #5cdb95;
-    font-size: 1.5rem;
+  .footer__link {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #edf5e1;
+    padding: 15px 60px 10px 60px;
+    margin: 35px 20px 0 20px;
+    border: 2px solid #edf5e1;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to left, #05386b 50%, #5cdb95 50%);
+    background-size: 200% 100%;
+    background-position: right top;
+    transition: ease all 0.3s;
+
+    &:hover {
+      background-position: left top;
+      border: 2px solid #5cdb95;
+      color: #05386b;
+    }
+  }
+
+  span {
+    transform: translateX(0px);
+    font-size: 30px;
+    transition: all ease 0.5s;
+  }
+
+  img {
+    transform: translateX(0px);
+    display: block;
+    height: 35px;
+    margin: 0 20px 0 0;
+    transition: all ease 0.5s;
+  }
+  .footer__link-p {
+    transform: translateX(0px);
+    opacity: 0;
+    transition: all ease 0.5s;
   }
 }
 
-.footer__1 {
-  width: 100%;
+.footer__link-info {
+  display: flex;
 }
 
-.footer__2 {
-  width: 100%;
+.footer__link:hover .footer__link-p {
+  transform: translateX(-30px);
+  opacity: 1;
+}
+
+.footer__link:hover span {
+  transform: translateX(-30px);
+}
+
+.footer__link:hover img {
+  transform: translateX(-30px);
+}
+
+.footer__pinky {
+  padding: 15px 0;
+  background: #edf5e1;
+  color: #05386b;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
