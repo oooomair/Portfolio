@@ -243,7 +243,9 @@ a {
   text-align: center;
   z-index: 100;
   width: 100%;
-  height: 90vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding-top: 10vh;
   position: fixed;
   right: 0;
@@ -253,6 +255,7 @@ a {
 }
 
 .navbar__link--small {
+  display: block;
   font-size: 1.5rem;
   text-transform: capitalize;
   margin: 20px auto;
@@ -536,51 +539,66 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  .home {
+    height: 100vh;
+  }
   .home__intro {
-    width: 460px;
+    width: 420px;
     margin: 150px 0 0 0;
   }
   .home__intro .home__hello h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .home__intro .home__hello h6 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .home__intro h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
   .home__intro h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .home__intro span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .home__me {
-    height: 350px;
+    height: 320px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .home__intro {
-    width: 320px;
+    width: 300px;
   }
   .home__intro .home__hello h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .home__intro .home__hello h6 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .home__intro h1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
   .home__intro h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .home__intro span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .home__me {
-    height: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 700px) and (max-width: 1200px) {
+  .home {
+    min-height: 130vh;
+  }
+  .home__intro {
+    margin-top: 150px;
+  }
+  .home__image {
+    margin-top: 100px;
   }
 }
 
@@ -1099,7 +1117,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
@@ -1114,19 +1134,20 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 200px;
+  width: 700px;
 }
 
 .about__intro h1 {
   color: #5cdb95;
-  font-size: 7rem;
+  font-size: 6rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
 .about__intro p {
+  display: block;
   color: #edf5e1;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 .about__intro span {
@@ -1162,8 +1183,8 @@ a {
   border-radius: 5px;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 1000px;
   margin-top: 50px;
+  margin-left: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1171,7 +1192,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  margin-right: 100px;
 }
 
 .about__developer {
@@ -1184,14 +1204,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 300px;
+  height: 150px;
   border-radius: 10px;
-  padding-right: 20px;
 }
 
 .about__developer img {
-  height: 250px;
-  width: 380px;
+  height: 100%;
 }
 
 .about__designer {
@@ -1204,13 +1222,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 300px;
+  height: 180px;
   border-radius: 10px;
   margin-bottom: 50px;
 }
 
 .about__designer img {
-  height: 250px;
+  height: 100%;
 }
 
 .about-skills {
@@ -1221,6 +1239,7 @@ a {
 .about-skills img {
   width: 100%;
   display: block;
+  margin: -5px 0;
 }
 
 .about-project {
@@ -1231,11 +1250,137 @@ a {
 .about-project img {
   width: 100%;
   display: block;
+  margin: -5px 0;
+}
+
+@media screen and (max-width: 1700px) {
+  .about__intro {
+    width: 600px;
+  }
+  .about__designer,
+  .about__developer {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__intro {
+    width: 800px;
+    text-align: center;
+  }
+  .about__intro h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .about__skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    margin-left: 0;
+  }
+  .about__designer {
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .about__developer {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__intro {
+    width: 500px;
+    text-align: start;
+  }
+  .about__intro h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .about__designer,
+  .about__developer {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    padding: 30px 0;
+  }
+  .about__intro {
+    width: 350px;
+    text-align: center;
+  }
+  .about__intro h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 5rem;
+  }
+  .about__intro p {
+    font-size: 1.5rem;
+  }
+  .about__intro .about__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .about__intro .about__contacts a {
+    margin: 25px 0 0 0;
+  }
+  .about__designer {
+    height: 140px;
+  }
+  .about__developer {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__intro {
+    width: 300px;
+    text-align: center;
+  }
+  .about__intro h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 4.5rem;
+  }
+  .about__intro p {
+    font-size: 1.3rem;
+  }
+  .about__intro .about__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .about__intro .about__contacts a {
+    margin: 25px 0 0 0;
+  }
+  .about__designer {
+    height: 115px;
+  }
+  .about__developer {
+    height: 115px;
+  }
 }
 
 .skills {
   background: #edf5e1;
-  padding: 60px 0 70px 0;
+  padding: 60px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1271,6 +1416,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 1100px;
 }
 
 .skills__technologies .skills__skill {
@@ -1408,39 +1554,36 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .skills__technologies {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    width: 320px;
-  }
-  .skills__technologies .skills__skill img {
-    height: 100px;
-  }
-  .skills__technologies .skills__skill .skills__jq-logo {
-    height: 50px;
-  }
-  .skills__other-technologies {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    width: 320px;
-  }
-  .skills__other-technologies .skills__skill img {
-    height: 100px;
-  }
-  .skills__other-technologies .skills__skill .skills__express-logo {
-    height: 45px;
-  }
-  .skills__other-technologies .skills__skill .skills__mongodb-logo {
-    height: 130px;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .skills h1 {
     font-size: 2rem;
   }
   .skills h2 {
     margin-bottom: 30px;
+  }
+  .skills__technologies {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+  }
+  .skills__technologies .skills__skill img {
+    height: 70px;
+  }
+  .skills__technologies .skills__skill .skills__jq-logo {
+    height: 25px;
+  }
+  .skills__other-technologies {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+  }
+  .skills__other-technologies .skills__skill img {
+    height: 70px;
+  }
+  .skills__other-technologies .skills__skill .skills__express-logo {
+    height: 28px;
+  }
+  .skills__other-technologies .skills__skill .skills__mongodb-logo {
+    height: 100px;
   }
 }
 

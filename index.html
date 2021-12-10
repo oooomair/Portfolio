@@ -33,12 +33,12 @@
       </ul>
     </nav>
     <div class="navbar__links--small">
-      <li class="navbar__link--small"><a href="">skills</a></li>
-      <li class="navbar__link--small"><a href="">projects</a></li>
-      <li class="navbar__link--small"><a href="">about</a></li>
-      <li class="navbar__link--small"><a href="">resume</a></li>
-      <li class="navbar__link--small">
-        <a href="">contact</a>
+      <li><a class="navbar__link--small" href="#skills">skills</a></li>
+      <li><a class="navbar__link--small" href="#about">about</a></li>
+      <li><a class="navbar__link--small" href="#projects">projects</a></li>
+      <li><a class="navbar__link--small" href="">resume</a></li>
+      <li>
+        <a class="navbar__link--small" href="">contact</a>
       </li>
     </div>
     <section id="home">
@@ -108,8 +108,16 @@
             <span class="skills__text">GIT</span>
           </div>
         </div>
-        <h2>Backend technologies</h2>
+        <h2>Backend</h2>
         <div class="skills__other-technologies">
+          <div class="skills__skill">
+            <img
+              class="skills__mongodb-logo"
+              src="./assets/mongodb-logo.png"
+              alt="mongodb logo"
+            />
+            <span class="skills__text">MONGODB</span>
+          </div>
           <div class="skills__skill">
             <img src="./assets/nodejs-logo.png" alt="node logo" />
             <span class="skills__text">NODEJS</span>
@@ -122,18 +130,10 @@
             />
             <span class="skills__text">EXPRESS</span>
           </div>
-          <div class="skills__skill">
-            <img
-              class="skills__mongodb-logo"
-              src="./assets/mongodb-logo.png"
-              alt="mongodb logo"
-            />
-            <span class="skills__text">MONGODB</span>
-          </div>
         </div>
       </div>
     </section>
-    <!-- <section id="about">
+    <section id="about">
       <div class="about-skills">
         <img src="./assets/about-skill.svg" alt="" />
       </div>
@@ -149,7 +149,11 @@
             contributing to the tech community, Problem-solver who writes simple
             and clean human code.
           </p>
-          <p>I am currently very intrested in the web 3 movement</p>
+          <p>
+            I am currently very intrested in the web 3 movement Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Temporibus,
+            necessitatibus.
+          </p>
           <div class="about__contacts">
             <a href="">CONTACT</a>
             <a href="">RESUME</a>
@@ -168,7 +172,7 @@
     <div class="about-project">
       <img src="./assets/about-project.svg" alt="" />
     </div>
-    <section id="projects">
+    <!--<section id="projects">
       <div class="projects">
         <img
           class="projects__back-l"

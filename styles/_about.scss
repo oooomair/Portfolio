@@ -3,7 +3,7 @@
 .about {
   background: #05386b;
   display: flex;
-  padding: 0 200px;
+  justify-content: center;
   position: relative;
 }
 
@@ -11,17 +11,18 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 0 200px;
+  width: 700px;
 
   h1 {
     color: #5cdb95;
-    font-size: 7rem;
+    font-size: 6rem;
     align-self: flex-start;
   }
 
   p {
+    display: block;
     color: #edf5e1;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 
   span {
@@ -51,24 +52,21 @@
 .about__skills {
   border-radius: 5px;
   align-self: center;
-  width: 1000px;
   margin-top: 50px;
+  margin-left: 180px;
   display: flex;
   flex-flow: column;
-  margin-right: 100px;
 }
 
 .about__developer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 150px;
   border-radius: 10px;
-  padding-right: 20px;
 
   img {
-    height: 250px;
-    width: 380px;
+    height: 100%;
   }
 }
 
@@ -76,12 +74,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 180px;
   border-radius: 10px;
   margin-bottom: 50px;
 
   img {
-    height: 250px;
+    height: 100%;
   }
 }
 
@@ -92,6 +90,7 @@
   img {
     width: 100%;
     display: block;
+    margin: -5px 0;
   }
 }
 
@@ -102,5 +101,114 @@
   img {
     width: 100%;
     display: block;
+    margin: -5px 0;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .about__intro {
+    width: 600px;
+  }
+  .about__designer,
+  .about__developer {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .about {
+    flex-flow: column;
+    align-items: center;
+  }
+  .about__intro {
+    width: 800px;
+    text-align: center;
+
+    h1 {
+      align-self: center;
+    }
+  }
+  .about__skills {
+    flex-flow: row;
+    margin-left: 0;
+  }
+  .about__designer {
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .about__developer {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__intro {
+    width: 500px;
+    text-align: start;
+
+    h1 {
+      align-self: flex-start;
+    }
+  }
+  .about__designer,
+  .about__developer {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    padding: 30px 0;
+  }
+  .about__intro {
+    width: 350px;
+    text-align: center;
+
+    h1 {
+      align-self: center;
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .about__contacts {
+      flex-flow: column;
+      a {
+        margin: 25px 0 0 0;
+      }
+    }
+  }
+  .about__designer {
+    height: 140px;
+  }
+  .about__developer {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__intro {
+    width: 300px;
+    text-align: center;
+
+    h1 {
+      align-self: center;
+      font-size: 4.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    .about__contacts {
+      flex-flow: column;
+      a {
+        margin: 25px 0 0 0;
+      }
+    }
+  }
+  .about__designer {
+    height: 115px;
+  }
+  .about__developer {
+    height: 115px;
   }
 }

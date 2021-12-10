@@ -6,6 +6,13 @@ $('.navbar__burger').on('click', function () {
     $('.navbar__logo').toggleClass('navbar__logo--blue')
 })
 
+$('html').on('click', '.navbar__links--small--close', function () {
+    $('.navbar__links--small--close').removeClass('navbar__links--small--close')
+    $('.navbar__burger').removeClass('navbar__burger--open')
+
+
+})
+
 // parallax effect
 
 $('html').on('mousemove', function (e) {

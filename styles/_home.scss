@@ -185,56 +185,71 @@
 }
 
 @media screen and (max-width: 700px) {
+  .home {
+    height: 100vh;
+  }
   .home__intro {
-    width: 460px;
+    width: 420px;
     margin: 150px 0 0 0;
 
     .home__hello {
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       h6 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
     }
     h1 {
-      font-size: 3.3rem;
+      font-size: 3rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     span {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
   .home__me {
-    height: 350px;
+    height: 320px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .home__intro {
-    width: 320px;
+    width: 300px;
 
     .home__hello {
       h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
       h6 {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
     h1 {
-      font-size: 2.7rem;
+      font-size: 2.4rem;
     }
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     span {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
   .home__me {
-    height: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 700px) and (max-width: 1200px) {
+  .home {
+    min-height: 130vh;
+  }
+  .home__intro {
+    margin-top: 150px;
+  }
+  .home__image {
+    margin-top: 100px;
   }
 }

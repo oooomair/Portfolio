@@ -2,7 +2,7 @@
 
 .skills {
   background: #edf5e1;
-  padding: 60px 0 70px 0;
+  padding: 60px 0 20px 0;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -27,6 +27,7 @@
   row-gap: 1rem;
   justify-items: center;
   align-items: center;
+  width: 1100px;
 
   .skills__skill {
     display: flex;
@@ -138,42 +139,39 @@
 }
 
 @media screen and (max-width: 700px) {
-  .skills__technologies {
-    grid-template-columns: repeat(1, 1fr);
-    width: 320px;
-    .skills__skill {
-      img {
-        height: 100px;
-      }
-      .skills__jq-logo {
-        height: 50px;
-      }
-    }
-  }
-  .skills__other-technologies {
-    grid-template-columns: repeat(1, 1fr);
-    width: 320px;
-    .skills__skill {
-      img {
-        height: 100px;
-      }
-      .skills__express-logo {
-        height: 45px;
-      }
-      .skills__mongodb-logo {
-        height: 130px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
   .skills {
     h1 {
       font-size: 2rem;
     }
     h2 {
       margin-bottom: 30px;
+    }
+  }
+  .skills__technologies {
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+    .skills__skill {
+      img {
+        height: 70px;
+      }
+      .skills__jq-logo {
+        height: 25px;
+      }
+    }
+  }
+  .skills__other-technologies {
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+    .skills__skill {
+      img {
+        height: 70px;
+      }
+      .skills__express-logo {
+        height: 28px;
+      }
+      .skills__mongodb-logo {
+        height: 100px;
+      }
     }
   }
 }
