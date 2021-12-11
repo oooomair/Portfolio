@@ -23,6 +23,7 @@
     display: block;
     color: #edf5e1;
     font-size: 1.7rem;
+    margin-bottom: 10px;
   }
 
   span {
@@ -169,7 +170,7 @@
       font-size: 5rem;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .about__contacts {
       flex-flow: column;
@@ -193,15 +194,18 @@
 
     h1 {
       align-self: center;
-      font-size: 4.5rem;
+      font-size: 4.2rem;
+      margin: 15px;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
     .about__contacts {
       flex-flow: column;
       a {
-        margin: 25px 0 0 0;
+        margin: 20px 0 0 0;
+        padding: 10px 70px;
+        font-size: 15px;
       }
     }
   }
