@@ -193,7 +193,7 @@
   .show-less {
     font-size: 20px;
     margin-top: 60px;
-    padding: 10px 30px;
+    padding: 10px 300px;
     border: 2px solid #05386b;
     border-radius: 5px;
     transition: all ease 0.5s;
@@ -457,7 +457,7 @@
   }
 }
 
-@media screen and (max-width: 1950px) {
+@media screen and (max-width: 1900px) {
   .projects__back-l {
     left: -80px;
   }

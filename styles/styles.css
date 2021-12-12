@@ -14,6 +14,7 @@ body {
   height: 100vh;
   font-family: "Manrope", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 li {
@@ -875,7 +876,7 @@ a {
 .projects__project-desc-1 .show-less {
   font-size: 20px;
   margin-top: 60px;
-  padding: 10px 30px;
+  padding: 10px 300px;
   border: 2px solid #05386b;
   border-radius: 5px;
   -webkit-transition: all ease 0.5s;
@@ -1271,7 +1272,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1950px) {
+@media screen and (max-width: 1900px) {
   .projects__back-l {
     left: -80px;
   }
@@ -2128,7 +2129,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 350px;
 }
 
 .footer__pixme {
@@ -2179,7 +2179,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px 0 0 0;
 }
 
 .footer__links .footer__link {
@@ -2275,5 +2274,86 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .footer__link-p {
+    display: none;
+  }
+  .footer__links .footer__link {
+    padding: 15px 70px;
+  }
+  .footer__links span {
+    font-size: 23px;
+  }
+  .footer__links img {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #05386b), color-stop(20%, #edf5e1));
+    background: linear-gradient(0deg, #05386b 80%, #edf5e1 20%);
+  }
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .footer__links .footer__link {
+    margin: 30px 20px 0 20px;
+    padding: 15px 0;
+    width: 500px;
+  }
+  .footer__links span {
+    font-size: 23px;
+  }
+  .footer__links img {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__mail h1 {
+    font-size: 3.3rem;
+    margin-top: 10px;
+  }
+  .footer__links .footer__link {
+    padding: 15px 0;
+    width: 300px;
+  }
+  .footer__links span {
+    font-size: 23px;
+  }
+  .footer__links img {
+    height: 25px;
+  }
+  .footer__pinky {
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__mail h1 {
+    font-size: 2.7rem;
+    margin-top: 10px;
+  }
+  .footer__links .footer__link {
+    padding: 15px 0;
+    width: 250px;
+  }
+  .footer__links span {
+    font-size: 20px;
+  }
+  .footer__links img {
+    height: 22px;
+  }
+  .footer__pinky {
+    padding: 10px 0;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
