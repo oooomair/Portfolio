@@ -159,10 +159,10 @@
       height: 25px;
     }
   }
-  .footer__pinky {
-    padding: 10px 0;
-    font-size: 1rem;
-  }
+}
+.footer__pinky {
+  padding: 5px 0;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -185,7 +185,6 @@
     }
   }
   .footer__pinky {
-    padding: 10px 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }

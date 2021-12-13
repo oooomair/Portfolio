@@ -257,7 +257,7 @@ a {
 
 .navbar__link--small {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   margin: 20px auto;
   padding: 20px;
@@ -617,6 +617,7 @@ a {
           align-items: center;
   padding: 50px 0 60px 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .projects h1 {
@@ -2382,10 +2383,11 @@ a {
   .footer__links img {
     height: 25px;
   }
-  .footer__pinky {
-    padding: 10px 0;
-    font-size: 1rem;
-  }
+}
+
+.footer__pinky {
+  padding: 5px 0;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -2404,8 +2406,7 @@ a {
     height: 22px;
   }
   .footer__pinky {
-    padding: 10px 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

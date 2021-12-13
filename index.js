@@ -40,14 +40,13 @@ $('html').on('mousemove', function (e) {
 let lastTopScroll = 0;
 window.addEventListener('scroll', function () {
 
-    let top = 0;
     let curScroll = window.pageYOffset;
 
     if (curScroll > lastTopScroll) {
         $('.navbar').css('background-color', '#edf5e1');
         $('.navbar').css('top', '-30vh');
     }
-    else if (top === curScroll) {
+    else if (curScroll <= 0) {
         $('.navbar').css('background-color', 'rgba(251, 255, 255, 0.055)')
         $('.navbar').css('top', '0');
         $('.navbar__logo').css('color', '#5cdb95');
