@@ -100,6 +100,25 @@ $('#show-less-1').on('click', function () {
     }, 650); 
 }})
 
+$('#project-img-res-1').on('click', function () {
+    if (window.matchMedia("(min-width: 600px)")) {
+    $('#project-img-res-1').css('opacity', '0')
+    $('#project-img-res-1').css('transform', 'translate(60px, 0)')
+    $('#project-1-desc').css('opacity', '0')
+    $('#project-1-desc').css('transform', 'translate(60px, 0)')
+    $('#project-1-img').removeClass('projects__img--click-for')
+    setTimeout(() => {
+        $('#project-img-res-1').css('transform', 'translate(-60px, 0)')
+        $('#project-img-res-1').css('display', 'none')
+        $('#project-1-desc').css('display', 'none')
+        $('#project-1-desc').css('transform', 'translate(-60px, 0)')
+    }, 650); 
+    setTimeout(() => {
+        $('#project-1-img').css('display', 'block')
+        $('#project-1-img').addClass('projects__img--unclick-for')
+    }, 650); 
+}})
+
 // 2
 
 $('#project-2-img').on('click', function () {
@@ -122,6 +141,23 @@ $('#project-2-img').on('click', function () {
 }})
 
 $('#show-less-2').on('click', function () {
+    if (window.matchMedia("(min-width: 600px)")) {
+    $('#project-img-res-2').css('opacity', '0')
+    $('#project-img-res-2').css('transform', 'translate(-60px, 0)')
+    $('#project-2-desc').css('opacity', '0')
+    $('#project-2-desc').css('transform', 'translate(-60px, 0)')
+    $('#project-2-img').removeClass('projects__img--click-back')
+    setTimeout(() => {
+        $('#project-img-res-2').css('transform', 'translate(60px, 0)')
+        $('#project-img-res-2').css('display', 'none')
+        $('#project-2-desc').css('display', 'none')
+        $('#project-2-desc').css('transform', 'translate(60px, 0)')
+        $('#project-2-img').css('display', 'block')
+        $('#project-2-img').addClass('projects__img--unclick-back')
+    }, 650); 
+}})
+
+$('#project-img-res-2').on('click', function () {
     if (window.matchMedia("(min-width: 600px)")) {
     $('#project-img-res-2').css('opacity', '0')
     $('#project-img-res-2').css('transform', 'translate(-60px, 0)')

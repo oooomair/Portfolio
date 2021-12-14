@@ -2387,7 +2387,9 @@ a {
 
 .footer__pinky {
   padding: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  background-color: #154372;
+  color: #edf5e1;
 }
 
 @media screen and (max-width: 600px) {
