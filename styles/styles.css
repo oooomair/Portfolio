@@ -1316,6 +1316,7 @@ a {
   }
   .projects__project-desc-1 .show-less {
     margin-top: 30px;
+    padding: 10px 200px;
   }
   .projects__project-desc-2 h2 {
     font-size: 3.3rem;
@@ -1334,6 +1335,7 @@ a {
   }
   .projects__project-desc-2 .show-less {
     margin-top: 30px;
+    padding: 10px 200px;
   }
 }
 
@@ -2186,7 +2188,7 @@ a {
 
 .footer__pixme {
   border-radius: 50%;
-  height: 200px;
+  height: 190px;
 }
 
 .footer__foot {
