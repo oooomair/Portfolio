@@ -173,3 +173,61 @@ $('#project-img-res-2').on('click', function () {
         $('#project-2-img').addClass('projects__img--unclick-back')
     }, 650); 
 }})
+
+// 3
+
+$('#project-3-img').on('click', function () {
+    if (window.matchMedia("(min-width: 600px)")) {
+    $('#project-3-img').removeClass('projects__img--unclick-for')
+    $('#project-3-img').addClass('projects__img--click-for')
+    $('.projects__img--after').css('visibility', 'hidden')
+    setTimeout(() => {
+        $('#project-3-desc').css('display', 'flex')
+        $('#project-img-res-3').css('display', 'block')
+        $('#project-3-img').css('display', 'none')
+    }, 450); 
+    setTimeout(() => {
+        $('#project-3-desc').css('opacity', '1')
+        $('#project-3-desc').css('transform', 'translate(0, 0)')
+        $('#project-img-res-3').css('opacity', '1')
+        $('#project-img-res-3').css('transform', 'translate(0, 0)')
+    }, 500);
+}})
+
+$('#show-less-3').on('click', function () {
+    if (window.matchMedia("(min-width: 600px)")) {
+    $('#project-img-res-3').css('opacity', '0')
+    $('#project-img-res-3').css('transform', 'translate(60px, 0)')
+    $('#project-3-desc').css('opacity', '0')
+    $('#project-3-desc').css('transform', 'translate(60px, 0)')
+    $('#project-3-img').removeClass('projects__img--click-for')
+    setTimeout(() => {
+        $('#project-img-res-3').css('transform', 'translate(-60px, 0)')
+        $('#project-img-res-3').css('display', 'none')
+        $('#project-3-desc').css('display', 'none')
+        $('#project-3-desc').css('transform', 'translate(-60px, 0)')
+    }, 650); 
+    setTimeout(() => {
+        $('#project-3-img').css('display', 'block')
+        $('#project-3-img').addClass('projects__img--unclick-for')
+    }, 650); 
+}})
+
+$('#project-img-res-3').on('click', function () {
+    if (window.matchMedia("(min-width: 600px)")) {
+    $('#project-img-res-3').css('opacity', '0')
+    $('#project-img-res-3').css('transform', 'translate(60px, 0)')
+    $('#project-3-desc').css('opacity', '0')
+    $('#project-3-desc').css('transform', 'translate(60px, 0)')
+    $('#project-3-img').removeClass('projects__img--click-for')
+    setTimeout(() => {
+        $('#project-img-res-3').css('transform', 'translate(-60px, 0)')
+        $('#project-img-res-3').css('display', 'none')
+        $('#project-3-desc').css('display', 'none')
+        $('#project-3-desc').css('transform', 'translate(-60px, 0)')
+    }, 650); 
+    setTimeout(() => {
+        $('#project-3-img').css('display', 'block')
+        $('#project-3-img').addClass('projects__img--unclick-for')
+    }, 650); 
+}})
